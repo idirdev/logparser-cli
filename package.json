@@ -1,0 +1,22 @@
+{
+  "name": "@idirdev/logparser-cli",
+  "version": "1.2.0",
+  "description": "Parse and analyze log files in various formats (JSON, Apache/Nginx, syslog, bracket).",
+  "main": "src/index.js",
+  "author": "idirdev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idirdev/logparser-cli.git"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "bin": {
+    "logparser-cli": "./bin/cli.js"
+  }
+}
