@@ -84,3 +84,32 @@ logparser tail app.log --format json --lines 20
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+LogParser CLI est un outil en ligne de commande polyvalent pour analyser, filtrer et agréger des fichiers de logs. Il supporte les formats Apache, Nginx, JSON (NDJSON) et les formats personnalisés avec détection automatique. La sortie peut être affichée sous forme de tableau coloré, JSON ou CSV.
+
+### Installation
+```bash
+npm install -g @idirdev/logparser-cli
+```
+
+### Utilisation
+```bash
+# Analyser un fichier de log
+logparser parse access.log
+
+# Filtrer par niveau d'erreur
+logparser filter access.log --level error
+
+# Afficher les statistiques
+logparser stats access.log
+
+# Surveiller en temps réel
+logparser tail access.log
+```
+
+Consultez la section **Usage** ci-dessus pour la référence complète des commandes et options.
