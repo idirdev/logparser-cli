@@ -179,7 +179,9 @@ function extractMessage(obj: Record<string, any>): string {
  */
 export function isJsonFormat(line: string): boolean {
   const trimmed = line.trim();
-  if (!trimmed.startsWith("{") || !trimmed.endsWith("}")) return false;
+  const isObject = trimmed.startsWith("{") && trimmed.endsWith("}");
+  const isArray = trimmed.startsWith("[") && trimmed.endsWith("]");
+  if (!isObject && !isArray) return false;
 
   try {
     JSON.parse(trimmed);
