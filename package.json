@@ -18,5 +18,9 @@
   },
   "bin": {
     "logparser-cli": "./bin/cli.js"
+  },
+  "homepage": "https://github.com/idirdev/logparser-cli",
+  "bugs": {
+    "url": "https://github.com/idirdev/logparser-cli/issues"
   }
 }
